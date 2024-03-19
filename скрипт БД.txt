@@ -1,0 +1,252 @@
+-- drop database university;
+-- create database University;
+ use University;
+ 
+INSERT INTO subjects ( idSubjects, NameOfSubject)
+VALUES 
+(1000, 'Кроcсплатформенное программирование (практика QT)'),
+(1001, 'Основы построения инфокоммуникационных систем'),
+(1002, 'Глубокое обучение'),
+(1003, 'Информационные ресурсы управления ресурсами предприятия'),
+(1004, 'Основы построения инфокоммуникационных систем'),
+(1005, 'Моделирование операций'),
+(1006, 'Ознакомительная практика'),
+(1007, 'Технологическая (проектно-технологическая) практика'),
+(1008, 'Методика преподавания математики и информатики'),
+(1009, 'Основы компьютерной графики'),
+(1010, 'Архитектура корпоративных информационных систем'),
+(1011, 'Язык Python и анализ данных'),
+(1012, ' Введение в экспертные системы'),
+(1013, 'Алгоритмы и структуры данных'),
+(1014, 'Теория дискретных преобразователей'),
+(1015, 'Финансовый менеджмент'),
+(1016, ' Микроэкономика'),
+(1017, 'Экономико-математическое моделирование'),
+(1018, 'Методы оптимизации'),
+(1019, 'Методы программирования мобильных приложений'),
+(1020, 'Разработка мобильных приложений.'),
+(1021, 'Тестирование программного обеспечения'),
+(1022, 'Теория вероятностей и математическая статистика'),
+(1023, 'Математический анализ'),
+(1024, 'Проектирование баз данных'),
+(1025, ' Введение в экспертные системы');
+
+
+-- INSERT INTO AcademGroups  ( Number, CountOfStudents)
+-- VALUES (301, 20),
+-- (302, 19),
+-- (303, 18),
+-- (311, 20),
+-- (312, 19),
+-- (313, 20),
+-- (314, 19),
+-- (321, 20),
+-- (322, 19),
+-- (331, 20),
+-- (332, 19),
+-- (341, 20),
+-- (342, 19),
+-- (343, 20),
+-- (351, 19),
+-- (352, 20),
+-- (353, 19),
+-- (361, 20),
+-- (362, 19),
+-- (363, 20),
+-- (201, 19),
+-- (202, 20),
+-- (203, 19),
+-- (211, 20),
+-- (212, 19),
+-- (213, 20),
+-- (221, 19),
+-- (222, 20),
+-- (231, 19),
+-- (232, 20),
+-- (241, 19),
+-- (242, 20),
+-- (251, 19),
+-- (252, 20),
+-- (253, 19),
+-- (261, 20),
+-- (262, 19),
+-- (101, 20),
+-- (102, 19),
+-- (103, 20),
+-- (111, 20),
+-- (112, 19),
+-- (113, 20),
+-- (121, 19),
+-- (122, 20),
+-- (131, 19),
+-- (132, 20),
+-- (141, 19),
+-- (142, 20),
+-- (161, 20),
+-- (162, 19),
+-- (163, 20),
+-- (001, 19),
+-- (002, 20),
+-- (011, 19),
+-- (012, 20),
+-- (013, 19),
+-- (021, 20),
+-- (022, 20),
+-- (031, 19),
+-- (032, 20),
+-- (033, 19),
+-- (041, 20),
+-- (051, 19),
+-- (052, 20),
+-- (053, 19),
+-- (061, 20),
+-- (062, 20),
+-- (063, 19),
+-- (305, 20),
+-- (315, 19),
+-- (325, 20),
+-- (335, 19),
+-- (345, 20),
+-- (375, 19),
+-- (365, 20),
+-- (205, 20),
+-- (215, 19),
+-- (225, 20),
+-- (245, 19),
+-- (275, 20),
+-- (265, 19);
+
+
+-- INSERT INTO teachers  ( idTeachers, FIO, userPassword)
+-- VALUES 
+-- (901, 'Егорчев Антон Александрович', '12345'),
+-- (902, 'Чикрин Дмитрий Евгеньевич', '22345'),
+-- (903, 'Абдуллин Адель Ильдусович', '32345'),
+-- (904, 'Аллиуллов Ренат Дамирович', '42345'),
+-- (905, 'Ахмедова Альфира Мазитовна', '52345'),
+-- (906, 'Ахметшина Диляра Ихсановна', '62345'),
+-- (907, 'Арабов Муллошараф Курбонович', '72345'),
+-- (908, 'Бурнашев Рустам Арифович', '82345'),
+-- (909, 'Буянов Владислав Юрьевич', '92345'),
+-- (910, 'Вахитов Галим Зарибзянович', '102345'),
+-- (911, 'Габидуллина Зульфия Равилевна', '112345'),
+-- (912, 'Горбунов Владислав Маратович', '122345'),
+-- (913, 'Дубровин Вячеслав Тимофеевич', '132345'),
+-- (914, 'Еникеев Искандер Арсланович', '142345'),
+-- (915, 'Еникеева Аделя Искандеровна ', '152345'),
+-- (916, 'Еремина Ирина Ильинична', '162345'),
+-- (917, 'Жажнева Ирина Васильевна ', '172345'),
+-- (918, 'Заботин Игорь Ярославич', '182345'),
+-- (919, 'Казаева Ксения Евгеньевна ', '192345'),
+-- (920, 'Кораблев Анатолий Иванович', '202345'),
+-- (921, 'Корчагин Павел Анатольевич', '212345'),
+-- (922, 'Кузнецова Ирина Сергеевна', '222345'),
+-- (923, 'Матренина Ольга Михайловна', '232345'),
+-- (924, 'Миссаров Мукадас Дмухтасибович', '242345'),
+-- (925, 'Мухтарова Татьяна Маратовна', '252345'),
+-- (926, 'Пинягина Ольга Владиславовна', '262345'),
+-- (927, 'Пшеничный Сергей Павлович', '272345'),
+-- (928, 'Росин Александр Алексеевич', '282345'),
+-- (929, 'Сабитов Шамиль Рустэмович', '292345'),
+-- (930, 'Сафина Лилия Ильхамовна', '302345'),
+-- (931, 'Фарахов Рустам Ринатович', '312345'),
+-- (932, 'Фофанов Вячеслав Борисович', '322345'),
+-- (933, 'Чебакова Виолетта Юрьевна', '332345'),
+-- (934, 'Шульгина Оксана Николаевна', '342345'),
+-- (935, 'Шустова Евгения Петровна', '352345');
+
+-- CREATE TABLE AcademGroups (
+--   Number INTEGER,
+--   CountOfStudents INTEGER,
+--   PRIMARY KEY(Number)
+-- );
+
+-- CREATE TABLE Storage (
+--   idStorage INTEGER,
+--   numberOfStorage INTEGER,
+--   typeOfStorage TEXT,
+--   PRIMARY KEY(idStorage)
+-- );
+
+-- CREATE TABLE Rooms (
+--   RoomsNumber INTEGER,
+--   TypeOfRoom TEXT,
+--   PRIMARY KEY(RoomsNumber)
+-- );
+
+-- CREATE TABLE Inventory (
+--   idInventory INTEGER,
+--   fk_idStorage INTEGER,
+--   NameOfInventory TEXT,
+--   statusOfInventory INTEGER,
+--   FOREIGN KEY (fk_idStorage) REFERENCES Storage(idStorage),
+--   PRIMARY KEY(idInventory)
+-- );
+
+-- CREATE TABLE lessons (
+--   idlessons INTEGER,
+--   TypeOfLesson INTEGER,
+--   fk_RoomsNumber INTEGER,
+--   FOREIGN KEY (fk_RoomsNumber) REFERENCES Rooms(RoomsNumber),
+--   PRIMARY KEY(idlessons)
+-- );
+
+-- CREATE TABLE Repair (
+--   idRepair INTEGER,
+--   DateOfRepair DATE,
+--   Conclusion TEXT,
+--   fk_idInventory INTEGER,
+--   FOREIGN KEY (fk_idInventory) REFERENCES Inventory(idInventory),
+--   PRIMARY KEY(idRepair)
+-- );
+
+
+-- CREATE TABLE Rooms_has_Inventory (
+-- fk_RoomsNumber INTEGER,
+-- fk_idInventory INTEGER,
+-- FOREIGN KEY (fk_RoomsNumber) REFERENCES Rooms(RoomsNumber),
+-- FOREIGN KEY (fk_idInventory) REFERENCES Inventory(idInventory)
+-- );
+
+
+-- CREATE TABLE Subjects (
+--   idSubjects INTEGER,
+--   NameOfSubject TEXT,
+--   PRIMARY KEY(idSubjects)
+-- );
+
+-- CREATE TABLE StudyingPlan (
+--   idStudyingPlan INTEGER,
+--   Hours INTEGER,
+--   TypeOfControl INTEGER,
+--   fk_idlessons INTEGER,
+--   fk_idSubjects INTEGER,
+--   fk_Number INTEGER,
+--   FOREIGN KEY (fk_idlessons) REFERENCES lessons(idlessons),
+--   FOREIGN KEY (fk_idSubjects) REFERENCES Subjects(idSubjects),
+--   FOREIGN KEY (fk_Number) REFERENCES AcademGroups(Number),
+--   PRIMARY KEY(idStudyingPlan)
+-- );
+
+-- CREATE TABLE Teachers (
+--   idTeachers INTEGER,
+--   FIO text,
+--   userPassword text,
+--   PRIMARY KEY(idTeachers)
+-- );
+
+-- CREATE TABLE Subjects_has_Teachers (
+--   fk_idSubjects INTEGER,
+--   fk_idTeachers INTEGER,
+--   fk_idlessons INTEGER,
+--   FOREIGN KEY (fk_idSubjects) REFERENCES Subjects(idSubjects),
+--   FOREIGN KEY (fk_idTeachers) REFERENCES Teachers(idTeachers),
+--   FOREIGN KEY (fk_idlessons) REFERENCES lessons(idlessons)
+-- );
+
+-- CREATE TABLE Users (
+--   idUsers INTEGER,
+--   userPassword text,
+--   FIO INTEGER,
+--   PRIMARY KEY(idUsers)
+-- );
